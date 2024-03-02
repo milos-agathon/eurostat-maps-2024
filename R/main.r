@@ -202,7 +202,7 @@ bb <- sf::st_bbox(lambert_bbox)
 p <- ggplot(data = mapping_sf) +
     geom_sf(
         data = subset(
-            eu,
+            eu_sf,
             CNTR_ID == "RS"
         ),
         fill = "grey80",
